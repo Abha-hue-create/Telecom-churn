@@ -1,0 +1,157 @@
+{
+  "numeric_features": [
+    "SeniorCitizen",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "categorical_features": [
+    "gender",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ],
+  "categorical_options": {
+    "gender": [
+      "Female",
+      "Male"
+    ],
+    "Partner": [
+      "No",
+      "Yes"
+    ],
+    "Dependents": [
+      "No",
+      "Yes"
+    ],
+    "PhoneService": [
+      "No",
+      "Yes"
+    ],
+    "MultipleLines": [
+      "No",
+      "No phone service",
+      "Yes"
+    ],
+    "InternetService": [
+      "DSL",
+      "Fiber optic",
+      "No"
+    ],
+    "OnlineSecurity": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "OnlineBackup": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "DeviceProtection": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "TechSupport": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "StreamingTV": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "StreamingMovies": [
+      "No",
+      "No internet service",
+      "Yes"
+    ],
+    "Contract": [
+      "Month-to-month",
+      "One year",
+      "Two year"
+    ],
+    "PaperlessBilling": [
+      "No",
+      "Yes"
+    ],
+    "PaymentMethod": [
+      "Bank transfer (automatic)",
+      "Credit card (automatic)",
+      "Electronic check",
+      "Mailed check"
+    ]
+  },
+  "numeric_ranges": {
+    "SeniorCitizen": {
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    "tenure": {
+      "min": 0.0,
+      "max": 72.0,
+      "median": 29.0
+    },
+    "MonthlyCharges": {
+      "min": 18.25,
+      "max": 118.75,
+      "median": 70.35
+    },
+    "TotalCharges": {
+      "min": 0.0,
+      "max": 8684.8,
+      "median": 1394.55
+    }
+  },
+  "coefficients": {
+    "num__SeniorCitizen": 0.07371209266644736,
+    "num__tenure": -1.161963261352381,
+    "num__MonthlyCharges": -0.5382058700801093,
+    "num__TotalCharges": 0.5178965000091145,
+    "cat__gender_Male": 0.01731336640564756,
+    "cat__Partner_Yes": -0.011444780728296784,
+    "cat__Dependents_Yes": -0.2295759823395362,
+    "cat__PhoneService_Yes": -0.2949041750278739,
+    "cat__MultipleLines_No phone service": -0.20580281521574753,
+    "cat__MultipleLines_Yes": 0.3086043191296014,
+    "cat__InternetService_Fiber optic": 1.1746885840885832,
+    "cat__InternetService_No": -0.18769751912672727,
+    "cat__OnlineSecurity_No internet service": -0.18769751912672727,
+    "cat__OnlineSecurity_Yes": -0.35334127761695294,
+    "cat__OnlineBackup_No internet service": -0.18769751912672727,
+    "cat__OnlineBackup_Yes": -0.09814422465037866,
+    "cat__DeviceProtection_No internet service": -0.18769751912672727,
+    "cat__DeviceProtection_Yes": 0.031532891458233625,
+    "cat__TechSupport_No internet service": -0.18769751912672727,
+    "cat__TechSupport_Yes": -0.2877909986523721,
+    "cat__StreamingTV_No internet service": -0.18769751912672727,
+    "cat__StreamingTV_Yes": 0.3555104450297608,
+    "cat__StreamingMovies_No internet service": -0.18769751912672727,
+    "cat__StreamingMovies_Yes": 0.4407689742633177,
+    "cat__Contract_One year": -0.7184637989468552,
+    "cat__Contract_Two year": -1.3567451914460456,
+    "cat__PaperlessBilling_Yes": 0.37144128137424276,
+    "cat__PaymentMethod_Credit card (automatic)": 0.0069467194686796425,
+    "cat__PaymentMethod_Electronic check": 0.36606940012741357,
+    "cat__PaymentMethod_Mailed check": 0.059041860470534044
+  },
+  "accuracy": 0.7501419647927314,
+  "roc_auc": 0.8461504092351787,
+  "n_train": 5282,
+  "n_test": 1761,
+  "churn_rate": 0.2653698707936959
+}
